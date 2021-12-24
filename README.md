@@ -59,4 +59,5 @@ Another possibility is geographical analytics e.g. to calculate good places wher
 
 ## Limitations
 Currently, you can find specific problems in the code within the GitHub Issues. As the Google Maps API changes consistently, this code could outdate at any time. 
-The current architecture is very slow, which could be sped up by multithreading. Also, there is the risk that the code fails within the scraping, which could cost a lot of money. For that, the architecture needs to be changed by instantly uploading the API results into BigQuery.
+The current architecture is very slow, which could be sped up by multithreading. Also, there is the risk that the code fails within the scraping, which could cost a lot of money. For that, the architecture needs to be changed by instantly uploading the API results into BigQuery. 
+There will be a lot of duplicates as the Google Maps API also returns some results outside of the radius. This leads to higher cost, but is a conscious decision to get sure to have a 100% result. To reduce cost in risk of losing some places, you can exclude the second run within the code.
