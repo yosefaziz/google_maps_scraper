@@ -1,0 +1,5 @@
+GOOGLE_CLOUD:
+  project_id: insert_gcp_project_id
+  BigQuery:
+    dataset: insert_bigquery_dataset
+    table_name: insert_bigquery_table_name

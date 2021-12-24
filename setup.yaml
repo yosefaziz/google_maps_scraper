@@ -1,0 +1,10 @@
+LOCAL:
+  input_file_name: setup_area.xlsx
+  search_radius_km: insert_the_search_radius_in_kilometers
+GOOGLE_CLOUD:
+  credentials_file_path: insert_the_json_file_path
+  project_id: insert_the_project_id
+  Storage:
+    bucket_name: insert_the_gcp_bucket_name
+  Maps:
+    api_key: insert_your_key
